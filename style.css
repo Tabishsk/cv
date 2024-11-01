@@ -1,0 +1,996 @@
+
+/* Reset css */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, i,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+/*	font-size: 100%;
+	font: inherit;*/
+	vertical-align: baseline;    box-sizing: border-box;
+
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+	display: block;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Css Components */
+body{
+font-family: Arial!important;
+font-size: 15px;
+}
+
+
+.red-bg{
+    background-color: #e74c3c!important;
+    color: #fff!important;
+
+}
+
+.green-bg{
+    background-color: #2ecc71!important;
+    color: #fff!important;
+
+}
+
+.table-orange tr:first-child td{
+    background-color: #f16136;
+    color: #fff;
+
+}
+
+.viewchartdata .modal-body{
+padding:0;
+}
+
+
+/* Header css */
+.header-content {
+	box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);
+	position: relative;
+	z-index: 999;
+	background-color: #fff;
+	padding:10px 0;
+	text-align:center;
+}
+.header-content  img{
+	max-height: 22px;
+}
+/* Top Band */
+.alignallthing{
+	clear: both;
+	float: left;
+	width: 100%;
+}
+.topbandbarcon{
+	line-height: 30px;
+    background-color: #363636;
+    padding: 0 10px;
+}
+.leftcontfld{
+	float: left;
+}
+.leftcontfld h2{
+font-size: 12px;
+    color: #f7f64e;
+    line-height: 30px;
+    margin: 0;
+}
+.rightcontfld{
+	float: right;	
+}
+.rightcontfld .insbutton{
+	float: left;
+    font-size: 12px;
+    color: #fff;
+    font-weight: bold;
+    margin-left: 15px;	
+}
+/* Icon Define */
+.icondefinewidth{
+	width: 18px;
+    height: 18px;	
+}
+.instruction_icon , .questionpaper_icon{	
+    margin-right: 7px;
+    margin-top: 6px;
+    float: left;	
+}
+.instruction_icon {
+    background: url(/test-paper/images/Icon-sprite.png) no-repeat -140px -7px;
+}
+.questionpaper_icon {
+    background: url(/test-paper/images/Icon-sprite.png) no-repeat -188px -8px;    
+}
+.subject_instruction_icon1 {
+	background: url(/test-paper/images/Icon-sprite.png) no-repeat -140px -7px;
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: middle;
+    margin-left: 5px;
+    margin-top: -3px;
+}
+/* Second fold */
+.Calcouter {
+	background-color: #eeeeee;
+    padding: 8px 10px;	
+}
+.Subjectname{
+	float: left;	
+}
+.Subjectname a{
+	border: 1px solid #b3b3b3;
+    color: #585c65;
+    text-decoration: none;
+    background-color: #fff;
+    font-size: 12px;
+    line-height: 28px;
+    float: left;
+    padding: 0 10px;
+    border-radius: 3px;	
+}
+/* #Submit Button */
+.bottombtnfld{
+	border-top: 1px solid #c3c3c1;
+}
+.bottombtnfld form{
+	float: left;
+    width: calc(100% - 250px);
+}
+.bottombtnfld input{
+	float: left;
+    color: #252525;
+    background-color: #fff;
+    border: 1px solid #c8c8c8;
+    border-radius: 2px;
+    height: 39px;
+    padding: 0 20px;
+    font-size: 14px;	
+	cursor: pointer;
+}
+.bottombtnfld .markbutton + .markbutton{
+	margin-left: 5px;
+}
+.bottombtnfld .bluebutton{
+	background-color: #0c7cd5;
+    border-color: #0c7cd5;
+    color: #fff;
+    float: right;	
+}
+.bottombtnfld .btnsubmit{
+	width: 250px;
+    float: left;
+    background: #e5f6fd none repeat scroll 0 0;
+    border-left: 1px solid #c3c3c1;
+    text-align: center;
+}
+.bottombtnfld .btnsubmit input{
+	float: none;
+    display: inline-block;
+    background-color: #38aae9;
+    border-color: #38aae9;
+    color: #fff;
+}
+.bottombtnfld .innerfldpd{
+	padding: 8px 10px;
+    float: left;
+    width: 100%;	
+}
+.bottombtnfld .btnsubmit .innerfldpd{
+	
+}
+.bottombtnfld input:hover{
+	border: 1px solid #333;	
+}
+.bottombtnfld .markbutton:hover{
+	background: #0c7cd5;
+	color: #fff;
+}
+/* Right Side bar */
+.rightpanel{
+	float: right;
+    width: 250px;
+    border: 2px solid #000;
+    background: none repeat scroll 0 0 #f8fbff;
+}
+.questiontop{
+	padding: 10px;	
+}
+.iconinstrction {
+	float: left;
+    width: 50%;
+    margin-bottom: 10px;	
+}
+.iconinstrction:last-child{
+	margin-bottom: 0;
+}
+.iconinstrction .iconsetflds {
+	background: url(/test-paper/images/questions-sprite.png) no-repeat;
+	width: 29px;
+	height: 26px;
+	float: left;
+	margin-right: 10px;
+}
+.iconinstrction .answeredCount{
+	background-position: -7px -55px;	
+}
+.iconinstrction .notAnsweredCount{
+	background-position: -42px -56px;	
+}
+.iconinstrction .notVisitedCount{
+	background-position: -107px -56px;	
+}
+.iconinstrction .markedCount{
+	background-position: -75px -54px;
+	height: 28px;
+	width: 28px;
+}
+.iconinstrction .markedAnsweredCount{
+	background-position: -9px -87px;
+	width: 28px;
+	height: 29px;
+}
+.iconinstrction p{
+	margin-bottom: 0;
+    font-size: 12px;	
+}
+.iconinstrction.answerdicon p, .iconinstrction.notvisticon p{
+	line-height: 26px;
+}
+.iconinstrction.ansmarkrevicon{
+	width: 100%;
+}
+/* Question panel number */
+.questionnumbering{
+	background: #e5f6fd;
+}
+.questionnumbering .subheader{
+	line-height: 26px;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 0 10px;
+}
+.questionansewfld {
+	padding: 5px;
+    height: calc(100vh - 386px);
+    overflow-x: auto;
+}
+.question_area{
+	
+}
+.rowouterquest{
+	
+}
+.rowouterquest > div{
+	float: left;	
+}
+.rowouterquest > div a{
+	background: url(/test-paper/images/questions-sprite.png);
+    font-size: 16px;
+    color: #fff;
+    float: left;
+    text-align: center;
+    width: 50px;
+    cursor: pointer;
+    line-height: 43px;
+    margin-bottom: 10px;
+    margin-right: 2px;
+    text-decoration: none;
+    height: 43px;	
+}
+.rowouterquest .not_answered a{
+	background-position: -57px -6px;
+    width: 49px;
+    height: 43px;	
+}
+.rowouterquest .answered a{
+	background-position: -4px -5px;	
+}
+.rowouterquest .review a{
+	background-position: -108px -122px;
+	height: 50px;
+    line-height: 50px;
+    margin-bottom: 3px;	
+}
+.rowouterquest .review_answered a{
+	background-position: -66px -178px;
+    height: 53px;
+    line-height: 51px;
+    margin-bottom: 0;
+    width: 49px;	
+}
+.rowouterquest .not_visited a{
+	background-position: -157px -4px;
+    color: #474747;
+    height: 43px;
+    line-height: 43px;	
+}
+/* Left panel */
+.leftpanel{
+	float: left;
+    width: calc(100% - 250px);
+}
+.questionbody, .instructions{
+	display: none;
+}
+.leftpanelinstruction{
+	border: 1px solid #bdbdbd;
+    float: left;
+    font-size: 15px;
+    overflow: auto;
+    text-align: left;
+    width: 60%;
+    border-left: none;
+    margin-top: 0px;	
+	padding: 10px;
+	height: calc(100vh - 201px);
+     font-family: Arial!important;
+    letter-spacing: 0px;
+    line-height: 17px;
+    font-weight: 500;
+}
+.bothcol{
+	border: 1px solid #bdbdbd;
+    float: left;
+    font-size: 15px;
+    overflow: auto;
+    text-align: left;
+    width: 99.6%;
+    border-left: none;
+    margin-top: 0px;	
+	padding: 10px;
+	height: calc(100vh - 201px);	
+}
+.leftpanelquestion2{
+    border: 1px solid #bdbdbd;
+    float: left;
+    font-size: 15px;
+    overflow: auto;
+    text-align: left;
+    width: 39.6%;
+    margin-top: 0px;
+    padding: 10px;	
+	height: calc(100vh - 201px);
+}
+.leftpanelinstruction b, .leftpanelquestion2 b, .bothcol b{
+	font-weight: bold;
+}
+.leftpanelinstruction p, .leftpanelquestion2 p, .bothcol p{
+	
+}
+.leftpanelinstruction img, .leftpanelquestion2 img, .bothcol img{
+	max-width: 100%;
+	height: auto;
+}
+.timeingregion #qsetcontainer, .timeingregion #TimerLeft, .refreshtimerfld, span#AttId{
+	display: none;
+}
+#TimerRight{
+	padding: 5px;
+    font-weight: bold;
+    text-align: right;
+    color: #333;
+    font-size: 14px;	
+}
+.headerpapname {
+	background-color: #4e85c5;
+    line-height: 31px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    padding-left: 10px;
+}
+.questiontopfld b{
+	display: block;
+    margin-bottom: 10px;	
+}
+.questiontopfld span{
+	display: block;
+    margin-bottom: 10px;	
+}
+.questionaligcont{
+	padding-bottom: 10px;
+}
+.questionaligcont input{
+	float: left;
+    margin-left: 0;
+    margin-right: 5px;	
+}
+/* Calaculator css */
+.clacRegion{
+    float: right;
+    position: relative;z-index: 9999; 
+}
+.clacRegion .black_overlay{
+	position: absolute;
+    right: 0;
+    top: 40px;	
+}
+.clacRegion .show_overlay{
+	
+}
+.clacRegion .show_overlay a{
+    line-height: 30px;
+    font-size: 13px;
+    color: #58585a;
+    font-weight: bold;
+    text-decoration: none;
+    float: left;
+}
+.icon-0 {
+    background: url(/test-paper/images/Icon-sprite.png) no-repeat -148px -62px;
+    width: 17px;
+    height: 23px;
+    margin-right: 5px;
+    margin-top: 2px;
+    float: left;
+}
+.outeclac{
+	background: #dadada;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1) inset;
+    border-bottom: 7px solid #999;
+    position: relative;	
+}
+.headinclac{
+	margin-bottom: 5px;
+    padding: 10px;
+    background-color: #4286f3;
+    color: #ffffff;
+}
+.headinclac span{
+	font-size: 12px;	
+}
+.headinclac a{
+	
+}
+.headinclac .calc_close{
+	background: url(/test-paper/images/Sprite_New.png) no-repeat -204px -13px;
+    width: 16px;
+    height: 16px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 25px;
+    position: absolute;
+    right: 12px;
+    text-align: center;
+    top: 8px;	
+}
+.calcconoufldiv{
+	padding: 10px;
+}
+.calcconoufldiv input{
+	background: #f1f1f1;
+    border-radius: 4px;
+    color: #444;
+    cursor: pointer;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    height: 30px;
+    line-height: 20px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    width: 35px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #aaa;
+    border-bottom: 3px solid #aaa;
+}
+.calcconoufldiv .fullwidthinout{
+	width: 100%;
+}
+.calcconoufldiv .btnwidthcnhone{
+	width: 75px;	
+}
+.calcconoufldiv .btnwidthcnhtwo{
+	width: 115px;	
+}
+
+#secDiv{
+	position: absolute;	
+	z-index: 100;
+}
+
+.hovercontenflddiv{
+	width: 100%;
+	clear: both;
+	float: left;
+	max-width: 240px;
+	border: 1px solid #c3c3c1;
+	background: #e5f6fc;
+}
+.hovercontenflddiv .alignallthing{
+	clear: both;
+	float: left;
+	width: 100%;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	padding: 0 10px;
+}
+.hovercontenflddiv span{
+    color: #262626;
+    line-height: 26px;
+    text-align: center;
+   font-family: Arial!important;
+    font-size: 12px;	
+	float: left;
+	font-weight: bold;
+}
+.hovercontenflddiv a{
+	background: url(/test-paper/images/questions-sprite.png) no-repeat;
+    color: #262626;
+    line-height: 15px;
+    text-align: center;
+    font-family: Arial!important;
+    font-size: 12px;	
+	text-decoration: none;
+	font-weight: bold;
+	float: left;
+}
+
+.hovercontenflddiv a.answered1{
+	background-position: -7px -55px;
+    float: left;
+    height: 26px;
+    line-height: 20px;
+    margin-right: 10px;
+    width: 29px;
+    color: #fff;
+    padding-top: 3px;	
+}
+.hovercontenflddiv a.review_answered1{
+	background-position: -9px -87px;
+    float: left;
+    height: 29px;
+    line-height: 15px;
+    margin-right: 10px;
+    width: 28px;
+    color: #fff;
+    padding-top: 5px;	
+}
+.hovercontenflddiv a.not_answered1{
+	background-position: -42px -56px;
+    float: left;
+    height: 26px;
+    line-height: 22px;
+    margin-right: 10px;
+    width: 29px;
+    color: #fff;	
+}
+.hovercontenflddiv a.review1{
+	background-position: -75px -54px;
+    float: left;
+    height: 28px;
+    line-height: 18px;
+    margin-right: 10px;
+    width: 28px;
+    color: #fff;
+    padding-top: 5px;	
+}
+.hovercontenflddiv a.not_visited1{
+	background-position: -107px -56px;
+    float: left;
+    height: 26px;
+    line-height: 21px;
+    margin-right: 10px;
+    width: 29px;
+    color: #000;
+    padding-top: 2px;	
+}
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+
+
+
+.calc-time{
+    float: left;
+    width: calc(100% - 250px);
+}
+
+.newcandidateimg{
+ background: none repeat scroll 0 0 #f8fbff;
+    border-bottom: 0 none;
+    float: right;
+    margin-right: 0;
+    height: auto;
+    width: 250px;
+        border-left: 1px solid rgb(195, 195, 193);
+}
+
+.candidate-proimg{
+        float: left;
+    padding: 7px;
+}
+
+.newcandidateimg img{
+    border: 1px solid #c3c3c1;
+    border-radius: 1px;
+    height: 99px;
+    width: 89px;
+    cursor: pointer;
+
+}
+
+.profile_details {
+float: left;
+    padding-left: 9px;
+    width: calc(100% - 103px);
+}
+
+.profilename {
+    color: #2c363f;
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    padding: 4px;
+}
+
+
+
+
+
+
+
+/* Banking Exam style Start */
+.bankingtestpaper #maincont{
+	float: left;
+    width: calc(100% - 250px);
+}
+.bankingtestpaper .leftpanel{
+	width: 100%;
+}
+.bankingtestpaper{
+	color: #303030;
+	    line-height: 24px;
+}
+.bankingtestpaper .rightpaneouter{
+	float: right;
+    width: 250px;
+    position: relative;
+}
+.bankingtestpaper .rightpanel{
+	
+}
+.userdetailsfold{
+	border-left: 1px solid #c3c3c1;
+    padding: 7px;
+}
+.userdetailsfold .profileimage{
+	float: left;
+	width: 99px;
+}
+.userdetailsfold .profileimage img{
+	border: 1px solid #c3c3c1;
+    border-radius: 1px;
+    height: 99px;
+    width: 89px;
+}
+.userdetailsfold .usernamefld{
+	float: left;
+    color: #2c363f;
+    font-weight: bold;
+    width: 136px;
+    font-size: 17px;
+}
+.userdetailsfold .clickconteshodiv{
+	display: none;
+}
+.clickconteshodiv p{
+	
+}
+.clickconteshodiv span{
+	
+}
+.clickconteshodiv strong{
+	
+}
+.clickconteshodiv select{
+	
+}
+.questionaskfld > * {
+	margin-bottom: 10px;
+}
+.bankingtestpaper .iconinstrction p{
+	line-height: 14px;
+}
+.bankingtestpaper .iconinstrction.answerdicon p, .bankingtestpaper .iconinstrction.notvisticon p{
+	line-height: 26px;
+}
+.bankingtestpaper #TimerRow{
+padding: 3px 5px;
+    font-weight: bold;
+    color: #333;
+    font-size: 14px;
+    height: 30px;
+}
+.bankingtestpaper #TimerRight{
+	float: right;
+    padding: 0;
+}
+.bankingtestpaper .labelheadglf{
+	float: left;
+}
+.questionnumberingf {
+	border-top: 1px solid #bdbdbd;
+    padding: 2px 10px;
+    font-size: 15px;
+    font-weight: bold;	
+}
+.languageflds {
+	background-color: #4e85c5;
+    padding: 5px 10px;
+    text-align: right;	
+}
+.languageflds span{
+	color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+    padding-right: 5px;
+}
+.languageflds select{
+	border: 1px solid #7E9DB9;
+    height: 26px;	
+}
+.bankinclaout .bluebutton2{
+    border: 1px solid #38a9eb;
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 28px;
+    float: left;
+    padding: 0 15px;
+    border-radius: 3px;
+    margin-right: 15px;
+    position: relative;
+    background-color: #38a9eb;
+    margin-bottom: 3px;
+}
+.bankinclaout .bluebutton2:before{
+	border: 6px solid transparent;
+    content: "";
+    height: 0;
+    position: absolute;
+    width: 0;
+    border-top: 6px solid #38a9eb;
+    bottom: -13px;
+    left: 50%;
+}
+.bankinclaout .bluebutton2 strong{
+	    float: left;
+}
+.bankinclaout .bluebutton2 span{
+	margin-right: 0;
+    margin-left: 10px;
+    margin-top: 4px;
+}
+#AttId{
+	display: none !important;
+}
+.questiontype{
+	padding: 3px 10px;
+    border-top: 1px solid #c3c3c1;
+    color: #f07f5f;
+    font-size: 13px;
+    font-weight: bold;
+}
+.bankinclaout input[disabled]{
+	display: none;
+}
+.sectiontowtime{
+	border-top: 1px solid #c3c3c1;
+    padding: 0px 10px;
+}
+.sectiontowtime .bluebutton2{
+	background-color: #4e85c5;
+    float: left;
+    color: #fff;
+    font-size: 13px;
+    padding: 5px 15px;
+}
+.sectiontowtime .bluebutton2 strong{
+	float: left;
+}
+.sectiontowtime .bluebutton2 span{
+	margin-top: 3px;
+    margin-left: 10px;
+    margin-right: 0;
+}
+.bankouterfld .leftpanelinstruction{
+	height: calc(100vh - 250px);
+}
+.bankouterfld .leftpanelquestion2{
+    height: calc(100vh - 250px);
+}
+/* Banking Exam style End */
+.lstpaperdesgin .Subjectname a{
+	
+}
+.lstpaperdesgin .Subjectname a.actbtn{
+	
+}
+
+/* lst desgin */
+.icondaddingdivfld{
+   position: relative;
+    float: left;
+}
+.icondaddingdivfld:before {
+    border: 6px solid transparent;
+    content: "";
+    height: 0;
+    position: absolute;
+    width: 0;
+    border-top: 6px solid #38a9eb;
+    bottom: -9px;
+    left: 42%;
+}
+.leftueseconlst{
+float: left;
+    width: calc(100% - 250px);
+}
+.righusercontfld{
+   float: right;
+    width: 250px; 
+}
+.icondaddingdivfld span {
+    background: url(/test-paper/images/Icon-sprite.png) no-repeat -140px -7px;
+    position: absolute;
+    cursor: pointer;
+    vertical-align: middle;
+    margin-left: 5px;
+    margin-top: -3px;
+    width: 18px;
+    height: 18px;
+    right: 20px;
+    top: 8px;
+}
+.icondaddingdivfld .bluebutton2{
+    padding-right: 32px;
+}
+.lsttestpaperfld .labelheadglf{
+    font-weight: normal;
+}
+
+.sunjectwisecontflddiv {
+border-top: 1px solid #bdbdbd;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.sunjectwisecontflddiv .icondaddingdivfld:before{
+    display: none;
+}
+.sunjectwisecontflddiv .bluebutton2{
+padding: 7px 7px;
+    border-radius: 0;
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #36ace9;
+    font-weight: bold;
+    padding-right: 44px;
+    line-height: 18px;
+    border-right: 1px solid #bdbdbd;
+}
+.sunjectwisecontflddiv .icondaddingdivfld span{
+top: 10px;
+}
+.collapse_icon {
+    background: url(/test-paper/images/Icon-sprite.png) no-repeat -5px -63px;
+    width: 17px;
+    height: 48px;
+    cursor: pointer;
+    display: inline-block;
+    left: -7%;
+    position: absolute;
+    top: 43%;
+    z-index: 100;
+}
+.expand_icon {
+    background: url(/test-paper/images/Icon-sprite.png) no-repeat -30px -63px;
+    width: 17px;
+    height: 48px;
+    cursor: pointer;
+    display: none;
+    right: 0;
+    position: absolute;
+    top: 53%;
+    z-index: 100;
+}
+.icon-6 {
+    background: url(/test-paper/images/Icon-sprite.png) no-repeat -175px -63px;
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+}
+.icon-9 {
+    background: url(/test-paper/images/Icon-sprite-gray-scale.png) no-repeat -207px -63px;
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+}
+
+.rightpaneouter.rightsidebarhide{
+    display: none;
+}
+#maincont.leftsidebarhide{
+    width: 100%;
+}
+#maincont.leftsidebarhide .expand_icon{
+    display: block;
+}
+.lsttestpaperfld #instructioncontainer #allDiv{
+    position: absolute;z-index: 999;
+}
+
+
+
+.profilebtnlisting > .insbutton{
+background-color: #df4207;
+    width: 48%;
+    display: block;
+    border: none;
+    float: left;
+    margin: 5px 2px;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 3px;
+}
+
+.profilebtnlisting > .insbutton:hover{
+    background-color: #000;
+}
+
+#maincont{
+position: relative;
+}
+#maincont.leftsidebarhide .leftpanel{
+width: 100%;
+}
+.collapse_icon{
+right: 250px;
+left: initial;
+}
+
+
+.chart-radio input {
+    margin-right: 5px!important;
+}
+
+
+.view-chart{
+
+}
+
+.view-chart i{
+    color: #00b050;
+}
+
+
+.view-chart a{
+    text-decoration: underline;
+    
+}
+
+.chart-radio{
+
+}
+
+.chart-radio input{
+    
+}
+
+
